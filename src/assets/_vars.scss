@@ -1,0 +1,13 @@
+$widthSite: 1140px;
+$colorSite: #fc501c;
+$colorDarkText: #292f36;
+$colorWhiteText: #fce8e3;
+$backgroundColor: #e4dcd1;
+$gapElement: 32px;
+$widthBurgerMenu: 200px;
+
+@mixin location () {
+    display: flex;
+    justify-content: space-between;
+    gap: $gapElement;
+}

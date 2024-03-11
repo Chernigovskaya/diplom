@@ -1,0 +1,149 @@
+.product {
+    display: flex;
+    flex-direction: column;
+    gap: $gapElement;
+    margin-bottom: 48px;
+
+    &__text {
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 125%;
+        text-align: justify;
+        margin: 2% 1%;
+
+    }
+
+    &-box {
+        @include location;
+        flex-wrap: wrap;
+        margin: 1%;
+    }
+
+    &__no-limit {
+        width: 47%;
+        background-color: rgb(169, 218, 197);
+        padding: 22px;
+        border-radius: 40px;
+        box-shadow: 6px 4px 28px $colorDarkText;
+    }
+
+    &__limit {
+        width: 47%;
+        background-color: #eeb689;
+        padding: 22px;
+        border-radius: 40px;
+        box-shadow: 6px 4px 28px $colorDarkText;
+    }
+
+    &__no {
+        width: 98%;
+        background-color: #fc1111d7;
+        padding: 22px;
+        border-radius: 40px;
+        box-shadow: 6px 4px 28px $colorDarkText;
+    }
+
+    &__title {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 125%;
+        margin-bottom: 18px;
+        text-align: center;
+    }
+    &__el {
+        font-size: 24px;
+        padding: 12px 0 12px 36px;
+    }
+
+    &__ul {
+        font-size: 28px;
+        font-weight: 600;
+
+    }
+
+    &__li {
+        font-size: 24px;
+        list-style-type: disc;
+        font-weight: 400;
+        margin: 8px 42px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .center {
+        padding-left: calc(50% - $widthSite / 4);
+        padding-right: calc(50% - $widthSite / 4);
+    }
+
+    .product {
+        &__text {
+            font-size: 24px;
+
+            &_el {
+                font-size: 18px;
+                margin: 12px;
+            }
+
+            &-box {
+                gap: 12px;
+            }
+        }
+
+        &__title {
+            font-size: 24px;
+        }
+
+        &__ul {
+            font-size: 20px;
+        }
+
+        &__li {
+            font-size: 18px;
+            margin: 6px 24px;
+
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .center {
+        padding-left: calc(50% - $widthSite / 8);
+        padding-right: calc(50% - $widthSite / 8);
+    }
+
+    .product {
+        &__text {
+            font-size: 20px;
+
+            &_el {
+                font-size: 16px;
+                margin: 8px;
+            }
+        }
+
+        &-box {
+            gap: 8px;
+        }
+
+        &__no-limit {
+            width: 98%;
+        }
+        &__limit {
+            width: 98%;
+        }
+
+        &__title {
+            font-size: 20px;
+        }
+
+        &__ul {
+            font-size: 16px;
+        }
+
+        &__li {
+            font-size: 14px;
+            margin: 6px 24px;
+
+        }
+    }
+}

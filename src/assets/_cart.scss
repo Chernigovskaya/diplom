@@ -1,0 +1,86 @@
+
+.cart {
+    margin: 3% 1%;
+    &__title {
+        padding-bottom: 12px;        
+        font-size: 28px;
+        font-weight: 600;
+    }
+    &__name {     
+        font-size: 22px;
+        font-weight: 500;
+        list-style-type: decimal;
+    }
+    &__description {
+        font-size: 18px;
+        font-weight: 400;
+        list-style-type: initial;
+        padding-left: 24px;
+
+    }
+    &__ul{
+        font-size: 22px;
+        font-weight: 400;
+        padding: 12px;
+    }
+    &__text {
+        font-size: 18px;
+        margin: 12px 24px;
+    }
+
+
+}
+.total {
+    margin: 2% 1%;
+    &__info {
+        font-size: 18px;
+        font-weight: 400;
+        padding-top: 18px;
+    }
+    &__ul {
+        font-size: 28px;
+        font-weight: 600;
+    }
+    &__li {
+        margin: 12px;
+    }
+    &__label {
+        font-size: 24px;
+        font-weight: 500;
+        padding: 18px;
+        cursor: pointer;
+    }
+    &__input {
+        height: 32px;
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 8px;
+        width: 20%;
+        padding: 8px;
+        border: 1px solid #a4a4a4;
+        color: #B1B1B1;
+        font-size: 18px;
+        
+    }
+}
+label input {
+    display: none;
+  }
+  label span {
+    height: 18px;
+    width: 18px;
+    border: 1px solid gray;
+    display: inline-block;
+    position: relative;
+    background-color:#FFF;
+    border-radius:2px;
+    padding:3px;
+  }
+  [type=checkbox]:checked + span:before {
+    content: '\2714';
+    position: absolute;
+    top: -12px;
+    left: 0;
+    font-size:23px;
+    color:$colorSite;
+  }
