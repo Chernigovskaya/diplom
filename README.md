@@ -1,5 +1,5 @@
 # diplom
-https://{Chernigovskaya}.github.io/{diplom}/
+https://Chernigovskaya.github.io/diplom/
 
 
 ## Дипломным проект: ##
