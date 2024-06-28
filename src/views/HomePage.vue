@@ -1,7 +1,7 @@
 <template>
     <section class="about center">
         <div class="about__left">
-            <img class="about__img" src="@/assets/img/mother_str.jpg" alt="myPhoto" />
+            <img class="about__img" src="@/assets/img/my_photo.jpg" alt="myPhoto" />
         </div>
         <div class="about__right">
             <h2 class="about__title">Немного о себе</h2>
